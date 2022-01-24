@@ -1,0 +1,25 @@
+.tesla__information{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			position: relative;
+			max-width: 440px;
+			right: 0;
+			margin-top: 37px;
+			background: #e51937;
+			padding: 51px 72px 11px 52px;
+			color: #fff;
+			.future__drive{
+				font-size: 30px;
+			}
+			.tesla__review{
+				font-size: 15px;
+				font-weight: 500;
+				text-align: left;
+			}
+		}
+
+<div class="tesla__information">
+				<p class="future__drive">Будущее вождения</p>
+				<p class="tesla__review">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
+			</div>

@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+
+*{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	box-sizing: border-box;
+	a{
+		text-decoration: none;
+		color: #000;
+	}
+	p{
+		margin: 0;
+		padding: 0;
+	}
+	padding: 0;
+	margin: 0;
+	img{
+		padding: 0;
+		margin: 0;
+	}
+}
+
+body{
+	position: relative;
+}
+
+.wrapper{
+	.header{
+		margin: 0 60px 0 43px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.btn__box{
+			display: flex;
+			justify-content: space-between;
+			.modelBtn, .active{
+				margin: 15px;
+				position: relative;
+			}
+
+			.modelBtn::before, .active::before{
+				content: "";
+				position: absolute;
+				bottom: -5px;
+				right: 0;
+				background: #E51937;
+				width: 100%;
+				height: 3px;
+				border-radius: 0 0 50% 50%;
+				transition: 0.2s;
+				transform: scaleX(0);
+			}
+
+			.modelBtn:hover::before{
+				content: "";
+				width: 100%;
+				transform: scaleX(1);
+			}
+			.active::before{
+				content: "";
+				width: 100%;
+				transform: scaleX(1);
+			}
+			.btn__modelS{
+				margin-right: 63px;
+			}
+			.btn__modelX{
+				margin-right: 25px;
+			}
+			.btn__model3{
+				margin-right: 44px;
+			}
+			.btn__roadster{
+				margin-right: 46px;
+			}
+			.btn__energy{
+				margin-right: 221px;
+			}
+			.btn__store-login{
+				display: flex;
+				align-items: center;
+				.btn__store{
+					margin-right: 30px;
+				}
+				margin-right: 30px;
+			}
+			.header__burger{
+				display: flex;
+				align-items: center;
+				cursor: pointer;
+			}
+		}
+	}
+	.main{
+		margin-top: 58px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		.title{
+			text-align: center;
+			margin-bottom: 35px;
+			.name{
+				font-size: 90px;
+				margin-bottom: 9px;
+			}
+			.slogan{
+				font-weight: 500;
+				font-size: 15px;
+			}
+		}
+		.tesla__img{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			.tesla__background{
+				max-width: 100%;
+				margin: -144px 0 -127px 0;
+			}
+			.tesla__tesla{
+				max-width: 100%;
+				margin: -144px 0 -127px 0;
+			}
+		}
+		.characteristic{
+			display: flex;
+			margin-top: 127px;
+			justify-content: center;
+			align-items: center;
+			.speed{
+				margin-right: 81px;
+			}
+			.road{
+				margin-right: 105px;
+			}
+			.test-drive{
+				margin-right: 40px;
+			}
+			.order{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 160px;
+				height: 40px;
+				left: 959px;
+				top: 765px;
+				border: 2px solid #E51937;
+				box-sizing: border-box;
+				.order__button{
+						width: 147px;
+						height: 24px;
+						left: 966px;
+						top: 776px;
+						font-family: Montserrat;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 13px;
+						line-height: 16px;
+						text-align: center;
+						text-transform: uppercase;
+						color: #E51937;
+				}
+			}
+		}
+		.btn__down{
+			margin-top: 10px;
+		}
+		.tesla__review{
+			width: 100%;
+			margin-top: 93px;
+			margin-bottom: -4px;
+			position: relative;
+			top: 0;
+			left: 0;
+			.tesla__model{
+				display: inline-block;
+				font-size: 70px;
+				color: #e51937;
+				position: absolute;
+				top: 0;
+				left: 80px;
+				z-index: 31;
+			}
+			.tesla__background{
+				width: 100%;
+				position: relative;
+				left: 0;
+				top: 0;
+			}
+			.tesla__info{
+				max-width: 440px;
+				position: absolute;
+				bottom: 4px;
+				right: 0;
+				color: #fff;
+				background: #e51937;
+				padding-left: 52px;
+				padding-right: 72px;
+				.tesla__title{
+					font-size: 30px;
+					padding: 51px 0 11px 0;
+				}
+				.tesla__text{
+					padding-bottom: 54px;
+				}
+				.tesla__display{
+					padding-bottom: 35px;
+				}
+				.tesla__wifiUpdate{
+					padding-bottom: 25px;
+				}
+				.tesla__bag{
+					padding-bottom: 171px;
+				}
+				.tesla__moreOrder{
+					padding-bottom: 63px;
+				}
+			}
+		}
+		.tesla__tech{
+			max-width: 100%;
+			display: flex;
+			justify-content: flex-start;
+			.tesla__safety{
+				position: absolute;
+				left: 0;
+				max-width: 440px;
+				color: #fff;
+				background: #e51937;
+				padding-left: 56px;
+				padding-right: 68px;
+				.tesla__safety__title{
+					padding-top: 51px;
+					font-size: 30px;
+				}
+				.tesla__safety__review{
+					margin-top: 12px;
+					font-size: 15px;
+					font-weight: 500;
+				}
+				.tesla__safety__rating{
+					.tesla__safety__rating__title{
+						margin-top: 49px;
+						font-size: 30px;
+					}
+					.safety__front{
+						display: flex;
+						align-items: center;
+						.front__text{
+							margin-right: 61px;
+						}
+					}
+					.safety__aside{
+						display: flex;
+						align-items: center;
+						.aside__text{
+							margin-right: 78px;
+						}
+					}
+					.safety__aside-pilows{
+						display: flex;
+						align-items: center;
+						.aside-pilows__text{
+							margin-right: 31px;
+							.pilow__text{
+								font-weight: 700;
+								opacity: 0.7;
+								font-size: 10px;
+							}
+						}
+					}
+					.safety__driver{
+						display: flex;
+						align-items: center;
+						.driver__text{
+							margin-right: 48px;
+						}
+					}
+					.safety__passenger{
+						display: flex;
+						align-items: center;
+						.passenger__text{
+							margin-right: 42px;
+						}
+					}
+				}
+				.fiveStarSafety{
+					margin-top: 101px;
+				}
+				.safety__orderMore{
+					margin-top: 60px;
+					margin-bottom: 60px;
+				}
+			}
+			.safety__carFrame{
+				padding: 0;
+				margin: 0;
+				position: absolute;
+				z-index: 1000;
+				top: 2023px;
+				left: 300px;
+			}
+			.safety__model{
+				padding: 0;
+				margin: 0;
+				position: absolute;
+				top: 1897px;
+				left: 528px;
+				font-size: 200px;
+				color: #E51937;
+				opacity: 0.1;
+			}
+		}
+	}
+}
+
